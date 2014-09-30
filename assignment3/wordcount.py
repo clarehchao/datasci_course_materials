@@ -18,6 +18,7 @@ def mapper(record):
     words = value.split()
     for w in words:
       mr.emit_intermediate(w, 1)
+      #print 'mapper: %s %s' % (w,1)
 
 def reducer(key, list_of_values):
     # key: word
@@ -26,6 +27,7 @@ def reducer(key, list_of_values):
     for v in list_of_values:
       total += v
     mr.emit((key, total))
+    #print 'reducer: %s %s' % (key, total)
 
 # Do not modify below this line
 # =============================

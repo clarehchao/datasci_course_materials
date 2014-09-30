@@ -22,5 +22,6 @@ class MapReduce:
 
         #jenc = json.JSONEncoder(encoding='latin-1')
         jenc = json.JSONEncoder()
+        print len(self.result)
         for item in self.result:
             print jenc.encode(item)

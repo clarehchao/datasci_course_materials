@@ -1,0 +1,8 @@
+# linux duplicate files
+*.py~
+*.txt~
+*.sql~
+
+
+# ignore directories that I do not want to pull to my own githug
+SurvivalPrediction_Titanic/example/
