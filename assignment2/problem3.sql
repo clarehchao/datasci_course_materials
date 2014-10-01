@@ -28,11 +28,10 @@ on a.term = b.term
 group by b.docid
 order by thesum DESC LIMIT 1;
 
-
-## 'group by' statement should be outside of the ()
-## before order by
-## order by ... DEC => order the list in descedning order
-## LIMIT x, retrieve the first xth row
+/* 'group by' statement should be outside of the ()
+ before order by
+ order by ... DEC => order the list in descedning order
+ LIMIT x, retrieve the first xth row*/
 
 
 
